@@ -29,7 +29,7 @@ var Weather = React.createClass({
         var {isLoading, temp, location, errorState} = this.state;
         function renderMessage() {
             if (isLoading) {
-                return <h3>Fetching weather...</h3>;
+                return <h3 className="text-center">Fetching weather...</h3>;
             } else if (errorState) {
                 return <h3>Cound not find your city!</h3>;
             } else {
@@ -40,8 +40,8 @@ var Weather = React.createClass({
         }
         return (
             <div>
+                <h1 className="text-center">Get Weather</h1>
                 <WeatherForm onSearch={this.handleSearch}/> {renderMessage()}
-                <h5>Version: 6</h5>
             </div>
         );
     }
