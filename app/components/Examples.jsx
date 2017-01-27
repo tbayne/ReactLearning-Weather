@@ -5,15 +5,18 @@ var Examples = (props) => {
     return (
         <div>
             <h1 className="text-center page-title">Examples</h1>
-            <p>Here are a few example locations to try out</p>
+            <p>Here are a few example locations to try out:</p>
             <ol>
                 <li>
-                    <Link to='/?location=Huntsville, Al'>Huntsville, AL</Link>
+                    <Link to='/?location=Huntsville'>Huntsville, Alabama</Link>
                 </li>
                 <li>
-                    <Link to='/?location=Rio,Brazil'>Rio, Brazil</Link>
+                    <Link to='/?location=Rio'>Rio, Brazil</Link>
                 </li>
-                <li></li>
+                <li>
+                    <Link to='/?location=Salem'>Salem, Oregon</Link>
+                </li>
+
             </ol>
         </div>
 
